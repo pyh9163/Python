@@ -1,0 +1,11 @@
+#1~1000 소수 출력,합
+y=0
+for i in range(2,1000):
+    count = 0
+    for j in range(1,i):
+        if i % j ==0:
+            count = count + 1
+    if count == 1:
+        print (i)
+        y = y+i
+print (y)
